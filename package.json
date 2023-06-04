@@ -1,0 +1,19 @@
+{
+  "name": "parallel-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 4 -d 'cypress/e2e/**/*.cy.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0",
+    "cypress-multi-reporters": "^1.6.3"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.13.0"
+  }
+}
