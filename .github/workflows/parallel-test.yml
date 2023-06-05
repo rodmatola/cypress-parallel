@@ -1,6 +1,7 @@
 name: cypress parallel
 on:
-  push: branches:[master]
+  push:
+    branches: master
 
 jobs:
   install:
