@@ -19,7 +19,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [actions, aliasing]
+        containers:
+          [actions, aliasing, assertions, cypress_api, viewport, viewport]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
