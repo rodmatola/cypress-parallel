@@ -1,5 +1,6 @@
 name: cypress parallel
 on:
+  workflow_dispatch:
   push:
     branches: master
 
